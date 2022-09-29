@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Mono', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+#header {
+    width: 100%;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    font-size: 24px;
+}
+
+/*------------------------ About Me------------------------ */
+#about {
+    margin-top: 12%;
+}
+.header-text {
+    margin-top: 7%;
+    margin-right: 20%;
+    float: right;
+}
+
+.header-text span {
+    background-image: url("/images/name_text_background.webp");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 50%;
+    background-repeat: repeat-x;
+    animation: scroll 3s infinite linear;
+    font-size: 125%;
+}
+
+
+@keyframes scroll {
+    from { background-position-x: 0;    }
+    to   { background-position-x: -100% }
+  }
+
+.about-left {
+    display: inline-block;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.about-left img {
+    width: 20vw;
+    border: solid white 3px;
+    border-radius: 50%;
+}
+
+.about-left .profile-contacts {
+    display: block;
+    margin-top: 3%;
+}
+
+.profile-contacts ul li {
+    list-style: none;
+    margin: 0 2%;
+    font-size: 2vw;
+}
+
+.profile-contacts ul li a i{
+    text-decoration: none;
+    color: white;
+}
