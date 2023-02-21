@@ -162,6 +162,23 @@ section {
     font-size: 15px;
 }
 
+.contact-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.2s;
+    background-color: black;
+}
+
+a .contact-btn{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /*------------------------ Footer ------------------------ */
 #footer {
