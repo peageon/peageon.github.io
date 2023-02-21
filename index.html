@@ -15,35 +15,70 @@
 <!----------------Header------------------>
     <div id="header">
         <div class="container">
-            <nav>
-                <a href="#"><img src="/images/sitelogo.png" class="logo"></a>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
+            <nav class="nav">
+                <a href="#"><img src="./images/sitelogo.svg" class="logo"></a>
+                <ul class="menu-list">
+                    <!-- <div class="icon cancel-btn">
+                        <i class="fa-light fa-xmark"></i>
+                    </div> -->
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="">Projects</a></li> -->
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li>
+                        <a href="./resume.pdf" target="_blank" id="resume">Resume</a>
+                    </li>
                 </ul>
+                <!-- <div class="icon menu-btn">
+                    <i class="fa-light fa-bars-sort"></i>
+                </div> -->
             </nav>
         </div>
     </div>
-<!----------------About Me----------------->
-    <div id="about">
-        <div class="container">
-            <div class="header-text">
-                <h1>Hello, I am <br><span>Jinsoo</span></h1>
-            </div>
-            <div class="about-left">
-                <img src="/images/profile_image.jpeg" class="profile-image">
-                <div class="profile-contacts">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/peageon"><i class="fa-brands fa-square-github"></i></a>
-                            <a href="https://www.linkedin.com/in/jinsoo-choi/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://instagram.com/raontheshiba"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="mailto:jinsoo2005@gmail.com"><i class="fa-solid fa-envelope" style="font-size: 90%;"></i></a>
-                        </li>
-                    </ul>
+
+    <!-- Main Contents -->
+    <div id="content">
+        <main>
+        <!----------------About Me----------------->
+            <section id="home">
+                <div class="container">
+                    <div class="header-text">
+                        <h1>Hello, I am <br><span>Jinsoo</span></h1>
+                    </div>
+                    <div class="about-left">
+                        <img src="./images/profile_image.jpeg" class="profile-image">
+                        <div class="profile-contacts">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/peageon"><i class="fa-brands fa-square-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/jinsoo-choi/"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://instagram.com/raontheshiba"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="mailto:jinsoo2005@gmail.com"><i class="fa-solid fa-envelope" style="font-size: 90%;"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+        <!----------------Contact----------------->
+            <section id="contact">
+                <div class="container">
+                    <div class="contact">
+                        <h2>Contact Me!</h2>
+                        <p>I welcome any queries or concerns you may have, especially with regards
+                             to opportunities in software engineering, 
+                             as I am actively seeking a job in this field. 
+                             Please don't hesitate to reach out to me.
+                        </p>
+                        <button class="contact-btn"><a href="mailto:jinsoo.choi@mail.utoronto.ca">Contact Me</a></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<!----------------Footer----------------->
+    <div id="footer">
+        <div class="container">
+            <p>© 2023 Jinsoo Choi</p>
         </div>
     </div>
 </body>
